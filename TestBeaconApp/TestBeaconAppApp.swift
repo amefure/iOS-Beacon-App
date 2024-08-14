@@ -7,8 +7,20 @@
 
 import SwiftUI
 
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        let beaconManager = BeaconPeripheralManager()
+        beaconManager.startBeacon()
+        return true
+    }
+
+}
+
+
 @main
 struct TestBeaconAppApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
             ContentView()
