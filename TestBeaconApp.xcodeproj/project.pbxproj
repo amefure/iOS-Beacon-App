@@ -12,6 +12,7 @@
 		12BA5F282C6CD45500E1DDF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BA5F272C6CD45500E1DDF2 /* Assets.xcassets */; };
 		12BA5F2B2C6CD45500E1DDF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BA5F2A2C6CD45500E1DDF2 /* Preview Assets.xcassets */; };
 		12BA5F332C6CDAF700E1DDF2 /* BeaconPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BA5F322C6CDAF700E1DDF2 /* BeaconPeripheralManager.swift */; };
+		12BA5F372C6DE25100E1DDF2 /* BeaconCentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BA5F362C6DE25100E1DDF2 /* BeaconCentralManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		12BA5F272C6CD45500E1DDF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12BA5F2A2C6CD45500E1DDF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12BA5F322C6CDAF700E1DDF2 /* BeaconPeripheralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconPeripheralManager.swift; sourceTree = "<group>"; };
+		12BA5F362C6DE25100E1DDF2 /* BeaconCentralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconCentralManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				12BA5F322C6CDAF700E1DDF2 /* BeaconPeripheralManager.swift */,
+				12BA5F362C6DE25100E1DDF2 /* BeaconCentralManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12BA5F332C6CDAF700E1DDF2 /* BeaconPeripheralManager.swift in Sources */,
+				12BA5F372C6DE25100E1DDF2 /* BeaconCentralManager.swift in Sources */,
 				12BA5F262C6CD45300E1DDF2 /* ContentView.swift in Sources */,
 				12BA5F242C6CD45300E1DDF2 /* TestBeaconAppApp.swift in Sources */,
 			);
@@ -287,8 +291,10 @@
 				DEVELOPMENT_TEAM = CGD79LB65H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Beaconを使用するため";
-				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Beaconを使用するため";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Beaconを検出するために位置情報を使用します。";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Beaconを検出するために位置情報を使用します。";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Beaconを検出するために位置情報を使用します。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Beaconを検出するために位置情報を使用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -318,8 +324,10 @@
 				DEVELOPMENT_TEAM = CGD79LB65H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Beaconを使用するため";
-				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Beaconを使用するため";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Beaconを検出するために位置情報を使用します。";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Beaconを検出するために位置情報を使用します。";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Beaconを検出するために位置情報を使用します。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Beaconを検出するために位置情報を使用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

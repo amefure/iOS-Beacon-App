@@ -10,8 +10,13 @@ import SwiftUI
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        let beaconManager = BeaconPeripheralManager.shared
-        beaconManager.startBeacon()
+        // ペリフェラル(Beacon発信側)
+        // let beaconPeripheralManager = BeaconPeripheralManager.shared
+        // beaconPeripheralManager.startBeacon()
+        
+        // セントラル(Beacon受信側)
+        let beaconCentralManager = BeaconCentralManager.shared
+        beaconCentralManager.startMonitoring()
         return true
     }
 
