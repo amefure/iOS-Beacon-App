@@ -46,7 +46,7 @@ class BeaconCentralManager: NSObject {
         
         // Beacon領域の設定
         beaconRegion = createBeaconRegion()
-        // Beacon領域の設定
+        // Beacon識別制約の設定
         beaconIdentityConstraint = createBeaconIdentityConstraint()
         
         // Beaconのモニタリングを開始
@@ -89,7 +89,6 @@ extension BeaconCentralManager: CLLocationManagerDelegate {
         }
     }
 
-    
     // 許可の状態が変更されたときに呼ばれるデリゲートメソッド
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         if manager.authorizationStatus == .authorizedWhenInUse {
